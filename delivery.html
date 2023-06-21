@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./delivery.css">
+    <title>jugueria</title>
+</head>
+<body>
+    <div class="hero">
+        <nav>
+            <a href="index.html"><img src="/IMGS PROYECT/logo jugueria1.png" alt="logo"></a>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="carta.html">Carta</a></li>
+                <li><a href="delivery.html">Delivery</a></li>
+                <li><a href="/pagos.html">Pagos</a></li>
+                <li><a href="Registrarse.html">Registrate</a></li>
+            </ul>
+        </nav>
+        <h1 class="centered-phrase">¡Tu delivery lo llevamos volando!</h1>
+        <p class="sub-phrase">Descubre la frescura en cada sorbo, en nuestra juguería</p>
+        <h2 class="rectangle-title">Ingresa tu dirección</h2>
+        <div class="rectangle">
+            <div class="input-container">
+                <textarea id="direccion" class="input-box" placeholder="Calle y número de puerta"></textarea>
+            </div>
+        </div>
+        <div class="button-container">
+            <button id="btnListo" class="input-button" disabled>Listo</button>
+        </div>
+    </div>
+    <footer>
+        <div class="cuerpo-pie">
+            <div class="verdadero-pie">
+                <img src="/IMGS PROYECT/logo jugueria1.png" class="logo-pie">
+                
+                <ul class="footer-menu-container">
+                    <img src="https://img.freepik.com/iconos-gratis/gorjeo_318-187597.jpg" style="width: 25px;">   
+                    <li class="menu-iten">Jugueria.Konoha</li>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/2021_Facebook_icon.svg/2048px-2021_Facebook_icon.svg.png" style="width: 25px;">
+                    <li class="menu-iten">Jugueria Konoha</li>
+                    <img src="https://logotipoz.com/wp-content/uploads/2021/10/instagram-png.png" style="width: 25px;">
+                    <li class="menu-iten">Jugueria_Konoha</li>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/2044px-WhatsApp.svg.png" style="width: 25px;">
+                    <li class="menu-iten">922022504</li>
+                </ul>
+                <span class="copyrigth">&copy;2023, Jugueria Konoha Derechos Reservados</span>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        var btnListo = document.getElementById('btnListo');
+        var direccionInput = document.getElementById('direccion');
+
+        btnListo.addEventListener('click', function() {
+            var direccion = direccionInput.value.trim();
+            
+            if (direccion === '') {
+                alert('Dirección no escrita');
+            } else {
+                alert('Registro exitoso');
+            }
+            
+            direccionInput.value = '';
+        });
+
+        direccionInput.addEventListener('input', function() {
+            if (direccionInput.value.trim() !== '') {
+                btnListo.disabled = false;
+            } else {
+                btnListo.disabled = true;
+            }
+        });
+    </script>
+</body>
+</html>

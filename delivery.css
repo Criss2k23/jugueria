@@ -1,0 +1,196 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+    background: #eff4fd;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    width: 84%;
+    margin: auto;
+    padding: 20px 0;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+nav ul li a:hover{
+    color: orange;  
+}
+span{
+    color: orange;
+}
+
+.centered-phrase {
+    text-align: center;
+    font-size: 50px;
+    margin-top: 20px;
+}
+
+.sub-phrase {
+    text-align: center;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.rectangle-title {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+
+.rectangle-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.rectangle {
+    width: 900px; /* Ajusta el ancho del rectángulo según tus preferencias */
+    padding: 5px;
+    border: 2px solid #000;
+    border-radius: 5px;
+    margin-right: 10px; /* Ajusta el margen derecho según tus preferencias */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.input-container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.input-box {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    resize: none;
+}
+
+.input-button {
+    padding: 20px 60px;
+    border: none;
+    border-radius: 500px;
+    background-color: #008000;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.button-container {
+    display: flex;
+    align-items: center;
+    margin-top: 20px; /* Ajusta el valor según tus preferencias */
+}
+
+/*comienzo de footer*/
+
+footer{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+.cuerpo-pie{
+    height: 25vh;
+    width: 100%;
+    position: relative;
+}
+.verdadero-pie{
+    width: 83%;
+    height: 50vh;
+    bottom: 0;
+    left: 0;
+    padding: 2rem 8%;
+    background-color: #0e0e0e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+.logo-pie{
+    height: 80px;
+    margin-bottom: 1rem;
+}
+.social-incons-container, .footer-menu-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+.social-icon{
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    border: 1px solid #f2f2f2;
+    background-image: url(Resources/FacebookBlanco.png);
+    background-position: center;
+    background-size: 40%;
+    background-repeat: no-repeat;
+    margin: 1rem;
+}
+.social-icon:hover{
+    background-color: #121212;
+    filter: invert(1);
+}
+.social-icon:nth-of-type(2){
+    background-image: url(Resources/InstagramBlanco.png);
+
+}
+.social-icon:nth-of-type(3){
+    background-image: url(Resources/LinkedingBlanco.png);
+
+}
+.social-icon:nth-of-type(4){
+    background-image: url(https://w7.pngwing.com/pngs/63/862/png-transparent-twitter-logo-monochrome-graphy-line-art-twitter-angle-white-face.png);
+
+}
+.footer-menu-container{
+    list-style-type: none;
+    color: #f2f2f2;
+    font-size: 18px;
+
+}
+.menu-iten{
+    margin: 1rem 1.5rem;
+    cursor: pointer;
+    opacity: 0.6;
+}
+.menu-iten:hover{
+    opacity: 1;
+}
+.copyright{
+    color: #f2f2f2;
+    opacity: 0.3;
+    text-align: center;
+}

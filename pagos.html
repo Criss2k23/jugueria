@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Tarjeta de Crédito</title>
+	<link href="https://fonts.googleapis.com/css?family=Lato|Liu+Jian+Mao+Cao&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="/pagos.js">
+	<link rel="stylesheet" href="/metodosdepago.css">
+</head>
+
+<body>
+	<div class="hero">
+        <nav>
+             <a href="index.html"><img src="/IMGS PROYECT/logo jugueria1.png" alt="logo"></a> 
+            <ul>
+                <li><a href="/index.html">Inicio</a></li>
+                <li><a href="/carta.html">Carta</a></li>
+                <li><a href="/delivery.html">Delivery</a></li>
+                <li><a href="/pagos.html">Pagos</a></li>
+				<li><a href="/Registrarse.html">Registrate</a></li>
+            </ul>
+        </nav>
+	<div class="contenedor">
+
+		<!-- Tarjeta -->
+		<section class="tarjeta" id="tarjeta">
+			<div class="delantera">
+				<div>
+					<div class="logo-marca" id="logo-marca">
+						<!-- <img src="img/logos/visa.png" alt="">-->
+					</div>
+					<img src="img/chip-tarjeta.png" class="chip" alt="">
+					<div class="datos">
+						<div class="grupo" id="numero">
+							<p class="label">Número Tarjeta</p>
+							<p class="numero"><input type="text" name="Inserte numero" id=""></p>
+						</div>
+						<div class="flexbox">
+							<div class="grupo" id="nombre">
+								<p class="label">Nombre Tarjeta</p>
+								<p class="nombre"><input type="text" name="Inserte numero" id=""></p>
+							</div>
+
+							<div class="grupo" id="expiracion">
+								<p class="label">Expiracion</p>
+								<p class="expiracion"><span class="mes">MM</span> / <span class="year">AA</span> </p>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+			<div class="trasera">
+				<div class="barra-magnetica"></div>
+				<div class="datos">
+					<div class="grupo" id="firma">
+						<p class="label">firma</p>
+						<div class="firma">
+							<p></p>
+						</div>
+					</div>
+					<div class="grupo" id="ccv">
+						<p class="label">CCV</p>
+						<p class="ccv"></p>
+					</div>
+					<p class="leyenda">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem
+						libero, laborum sunt debitis quia molestiae itaque reiciendis odio nisi nihil, nulla
+						recusandae qui rerum ea id inventore quas doloremque. Harum?</p>
+					<a href="#" class="link-banco">www.tubanco.com</a>
+				</div>
+			</div>
+		</section>
+
+		<!-- Contenedor Boton Abrir Formulario -->
+		<div class="contenedor-btn">
+			<button class="btn-abrir-formulario" id="btn-abrir-formulario"></button>
+			<i class="fas fa-plus"></i>
+		</div>
+
+		<!-- Formulario -->
+		<form action="" id="formulario-tarjeta" class="formulario-tarjeta">
+			<div class="grupo">
+				<label for="inputNumero">Número Tarjeta</label>
+				<input type="text" id="inputNumero" maxlength="19" autocomplete="off">
+			</div>
+			<div class="grupo">
+				<label for="input-Nombre">Nombre</label>
+				<input type="text" id="inputNombre" maxlength="19" autocomplete="off">
+			</div>
+			<div class="flexbox">
+				<div class="grupo expira">
+					<label for="selectMes">Expiracion</label>
+					<div class="flexbox">
+						<div class="grupo-select">
+							<select name="mes" id="select-Mes">
+								<option disabled selected>Mes</option>
+							</select>
+							<i class="fas fa-angle-dowm"></i>
+						</div>
+						<div class="grupo-select">
+							<select name="año" id="select-Año">
+								<option disabled selected>Año</option>
+							</select>
+							<i class="fas fa-angle-dowm"></i>
+						</div>
+					</div>
+				</div>
+
+				<div class="grupo ccv">
+					<label for="inputCCV">CCV</label>
+					<input type="text" id="inputCCV" maxlength="3">
+				</div>
+			</div>
+			<button type="submit" class="btn-enviar">Enviar</button>
+		</form>
+	</div>
+</div>
+	<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+	<script src="js/main.js"></script>
+</body>
+<footer>
+	<div class="cuerpo-pie">
+		<div class="verdadero-pie">
+		<img src="/IMGS PROYECT/logo jugueria1.png" class="logo-pie">
+		
+		<ul class="footer-menu-container">
+		<img src="https://img.freepik.com/iconos-gratis/gorjeo_318-187597.jpg" style="width: 25px;">   
+		<li class="menu-iten">Jugueria.Konoha</li>
+		<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/2021_Facebook_icon.svg/2048px-2021_Facebook_icon.svg.png" style="width: 25px;">
+		<li class="menu-iten">Jugueria Konoha</li>
+		<img src="https://logotipoz.com/wp-content/uploads/2021/10/instagram-png.png" style="width: 25px;">
+		<li class="menu-iten">Jugueria_Konoha</li>
+		<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/2044px-WhatsApp.svg.png" style="width: 25px;">
+		<li class="menu-iten">922022504</li>
+		</ul>
+		<span class="copyrigth">&copy;2023,Jugueria Konoha Derechos Reservados</span>
+		</div>
+	</div>
+</footer>
+</html>

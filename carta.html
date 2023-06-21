@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+  <link rel="stylesheet" href="carta.css">
+<head>
+  <title>Carta</title>
+
+</head>
+<body>
+  
+  <div class="hero">
+    <nav>
+         <a href="index.html"><img src="/IMGS PROYECT/logo jugueria1.png" alt="logo"></a> 
+        <ul>
+            <li><a href="/index.html">Inicio</a></li>
+            <li><a href="/carta.html">Carta</a></li>
+            <li><a href="/delivery.html">Delivery</a></li>
+            <li><a href="/pagos.html">Pagos</a></li>
+            <li><a href="/Registrarse.html">Registrate</a></li>
+        </ul>
+    </nav>
+  
+<h1>Carta</h1>
+  <div id="menu">
+    <div class="menu-item">
+      <img src="imagenes/jugo.jpg" alt="Jugo de naranja fresco">
+      <p>Jugo de naranja fresco</p>
+      <p>S/ 9.50</p>
+      <button class="buy-button" onclick="agregarAlCarrito('Jugo de naranja fresco', 9.50)">Añadir</button>
+    </div>
+    <div class="menu-item">
+      <img src="imagenes/fresa.jpg" alt="Batido de fresa">
+      <p>Batido de fresa</p>
+      <p>S/ 9.00</p>
+      <button class="buy-button" onclick="agregarAlCarrito('Batido de fresa', 9.00)">Añadir</button>
+    </div>
+    <div class="menu-item">
+        <img src="imagenes/mango.jpg" alt="Batido de fresa">
+        <p>Jugo de mango</p>
+        <p>S/ 9.00</p>
+        <button class="buy-button" onclick="agregarAlCarrito('Jugo de mango', 9.00)">Añadir</button>
+      </div>
+      <div class="menu-item">
+        <img src="imagenes/cafe.JPG" alt="Batido de fresa">
+        <p>Taza de cafe</p>
+        <p>S/ 6.00</p>
+        <button class="buy-button" onclick="agregarAlCarrito('Taza de cafe', 6.00)">Añadir</button>
+      </div>
+      <div class="menu-item">
+        <img src="imagenes/te.png" alt="Batido de fresa">
+        <p>Taza de té</p>
+        <p>S/ 5.00</p>
+        <button class="buy-button" onclick="agregarAlCarrito('Taza de té', 5.00)">Añadir</button>
+      </div>
+      <div class="menu-item">
+        <img src="imagenes/capuchino.jpg" alt="Batido de fresa">
+        <p>Capuchino</p>
+        <p>S/ 9.00</p>
+        <button class="buy-button" onclick="agregarAlCarrito('Capuchino', 9.00)">Añadir</button>
+      </div>
+      <div class="menu-item">
+        <img src="imagenes/empanada.jpg" alt="Batido de fresa">
+        <p>Empanadas</p>
+        <p>S/ 9.00</p>
+        <button class="buy-button" onclick="agregarAlCarrito('Empanadas', 9.00)">Añadir</button>
+      </div>
+      <div class="menu-item">
+        <img src="imagenes/hamburguesas.png" alt="Batido de fresa">
+        <p>Hamburguesas</p>
+        <p>S/ 10.00</p>
+        <button class="buy-button" onclick="agregarAlCarrito('Hamburguesas', 10.00)">Añadir</button>
+      </div>
+      <div class="menu-item">
+        <img src="imagenes/salchi.jpg" alt="Batido de fresa">
+        <p>Salchipapa</p>
+        <p>S/ 12.00</p>
+        <button class="buy-button" onclick="agregarAlCarrito('Salchipapa', 12.00)">Añadir</button>
+      </div>
+      <div class="menu-item">
+        <img src="imagenes/tequeños.jpeg" alt="Batido de fresa">
+        <p>Tequeños</p>
+        <p>S/ 10.00</p>
+        <button class="buy-button" onclick="agregarAlCarrito('Tequeños', 10.00)">Añadir</button>
+      </div>
+      <div class="menu-item">
+        <img src="imagenes/pollo.png" alt="Batido de fresa">
+        <p>Pan con pollo</p>
+        <p>S/ 12.00</p>
+        <button class="buy-button" onclick="agregarAlCarrito('Pan con pollo', 12.00)">Añadir</button>
+      </div>
+      <div class="menu-item">
+        <img src="imagenes/chicharrones.jpg" alt="Batido de fresa">
+        <p>Pan con chicharrón</p>
+        <p>S/ 15.00</p>
+        <button class="buy-button" onclick="agregarAlCarrito('Pan con chicharrón', 15.00)">Añadir</button>
+      </div>
+      <div class="menu-item">
+        <img src="imagenes/peje.png" alt="Batido de fresa">
+        <p> Pan Con Pejerrey</p>
+        <p>S/ 15.00</p>
+        <button class="buy-button" onclick="agregarAlCarrito('Pan Con Pejerrey', 15.00)">Añadir</button>
+      </div>
+      <div class="menu-item">
+        <img src="imagenes/kekenaranja.jpeg" alt="Batido de fresa">
+        <p> Keke de naranja</p>
+        <p>S/ 10.00</p>
+        <button class="buy-button" onclick="agregarAlCarrito('Keke de naranja', 10.00)">Añadir</button>
+      </div>
+      <div class="menu-item">
+        <img src="imagenes/platano.jpg" alt="Batido de fresa">
+        <p> Keke de platano</p>
+        <p>S/ 9.00</p>
+        <button class="buy-button" onclick="agregarAlCarrito('Keke de platano', 9.00)">Añadir</button>
+      </div>
+    <!-- Repite el patrón para los demás elementos del menú -->
+  
+
+  <div id="carrito">
+    <h2>Carrito de compras:</h2>
+    <ul id="carrito-lista"></ul>
+    <p class="total" id="carrito-total"></p>
+    <button id="comprar-todo-button" onclick="comprarTodo()">Comprar todo</button>
+  </div>
+</div>
+<br>
+<br>
+
+
+  <script>
+    // Variables globales
+    const carrito = [];
+    let totalCarrito = 0;
+
+    // Función para agregar un elemento al carrito
+    function agregarAlCarrito(nombre, precio) {
+      carrito.push({ nombre, precio });
+      totalCarrito += precio;
+      mostrarCarrito();
+    }
+
+    // Función para mostrar el contenido del carrito
+    function mostrarCarrito() {
+      const carritoLista = document.getElementById("carrito-lista");
+      const carritoTotal = document.getElementById("carrito-total");
+      carritoLista.innerHTML = "";
+      carrito.forEach((item, index) => {
+        const li = document.createElement("li");
+        li.textContent = `${item.nombre} - S/ ${item.precio.toFixed(2)}`;
+        const removeButton = document.createElement("button");
+        removeButton.textContent = "Eliminar";
+        removeButton.onclick = () => eliminarDelCarrito(index);
+        li.appendChild(removeButton);
+        carritoLista.appendChild(li);
+      });
+      carritoTotal.textContent = `Total: S/ ${totalCarrito.toFixed(2)}`;
+    }
+
+    // Función para eliminar un elemento del carrito
+    function eliminarDelCarrito(index) {
+      const item = carrito[index];
+      totalCarrito -= item.precio;
+      carrito.splice(index, 1);
+      mostrarCarrito();
+    }
+
+    // Función para comprar todo
+    function comprarTodo() {
+      if (carrito.length > 0) {
+        // Realizar acciones para comprar todo
+        // Por ejemplo, redirigir a una página de pago o mostrar un mensaje de éxito
+        alert("¡Compra realizada con éxito!");
+        carrito.length = 0;
+        totalCarrito = 0;
+        mostrarCarrito();
+      } else {
+        alert("El carrito está vacío");
+      }
+    }
+  </script>
+</body>
+<footer>
+  <div class="cuerpo-pie">
+      <div class="verdadero-pie">
+      <img src="/IMGS PROYECT/logo jugueria1.png" class="logo-pie">
+      
+      <ul class="footer-menu-container">
+      <img src="https://img.freepik.com/iconos-gratis/gorjeo_318-187597.jpg" style="width: 25px;">   
+      <li class="menu-iten">Jugueria.Konoha</li>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/2021_Facebook_icon.svg/2048px-2021_Facebook_icon.svg.png" style="width: 25px;">
+      <li class="menu-iten">Jugueria Konoha</li>
+      <img src="https://logotipoz.com/wp-content/uploads/2021/10/instagram-png.png" style="width: 25px;">
+      <li class="menu-iten">Jugueria_Konoha</li>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/2044px-WhatsApp.svg.png" style="width: 25px;">
+      <li class="menu-iten">922022504</li>
+      </ul>
+      <span class="copyrigth">&copy;2023,Jugueria Konoha Derechos Reservados</span>
+      </div>
+  </div>
+  </footer>
+</html>
+
+
+
